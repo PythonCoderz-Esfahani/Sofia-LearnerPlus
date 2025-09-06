@@ -57,7 +57,6 @@ namespace RelationalGit.KnowledgeShareStrategies
             {
                 return new ContributionRecRecommendationStrategy(knowledgeSaveReviewerReplacementType, logger, pullRequestReviewerSelectionStrategy, addOnlyToUnsafePullrequests, recommenderOption, changePast, simulationType);
             }
-
             else if (recommendationStrategy == KnowledgeShareStrategyType.WhoDoRec)
             {
                 return new WhoDoRecommendationStrategy(knowledgeSaveReviewerReplacementType, logger, numberOfPeriodsForCalculatingProbabilityOfStay, pullRequestReviewerSelectionStrategy, addOnlyToUnsafePullrequests, recommenderOption, changePast, simulationType);
